@@ -1,0 +1,41 @@
+:root {
+  --color-black: #000;
+  --color-primary: #34547a;
+  --color-secondary: #727272;
+  --color-light-gray: #eeeff1;
+  --color-white: #fff;
+}
+
+/*typography*/
+
+/*common classes*/
+
+.container {
+  width: min(100% - 40px, 1340px);
+  margin-inline: auto;
+}
+
+/*header*/
+
+.header {
+}
+.navbar {
+}
+.navbar__btn {
+}
+.navbar__btn-row {
+}
+.navbar__list {
+}
+.navbar__item {
+}
+.navbar__link {
+}
+.content {
+}
+.content__title {
+}
+.content__description {
+}
+.content__link {
+}
