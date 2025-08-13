@@ -1,3 +1,4 @@
+/*pseudo-classes*/
 :root {
   --color-black: #000;
   --color-primary: #34547a;
@@ -23,7 +24,6 @@
 }
 
 /*typography*/
-
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +52,6 @@ a {
 }
 
 /*common classes*/
-
 .container {
   width: min(100% - var(--gap-lg), var(--container-primary));
   margin-inline: auto;
@@ -77,7 +76,6 @@ a {
 }
 
 /*header*/
-
 .header {
   padding-top: 67px;
   padding-bottom: 141px;
@@ -85,7 +83,6 @@ a {
 }
 
 /*navbar*/
-
 .navbar {
   margin-bottom: 144px;
 }
@@ -133,7 +130,6 @@ a {
 }
 
 /*hero*/
-
 .hero {
   max-width: 540px;
   display: flex;
@@ -165,7 +161,6 @@ a {
 }
 
 /*section*/
-
 .section {
   padding-top: 110px;
   padding-bottom: 90px;
@@ -186,7 +181,6 @@ a {
 }
 
 /*experience*/
-
 .experience {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -221,7 +215,6 @@ a {
 }
 
 /*video*/
-
 .video {
   padding-bottom: 100px;
   background-color: var(--color-light);
@@ -237,7 +230,6 @@ a {
 }
 
 /*footer*/
-
 .footer {
   background-color: var(--color-primary);
   padding-top: 50px;
@@ -251,4 +243,67 @@ a {
 }
 .footer__description {
   font-size: 0.8125rem;
+}
+
+/*media queries*/
+@media (768px < width <= 1280px) {
+  html {
+    font-size: 15px;
+  }
+
+  .header {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+
+  .experience__container {
+    justify-content: space-around;
+  }
+}
+
+@media (480px < width <= 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .header {
+    padding-top: 36px;
+    padding-bottom: 72px;
+  }
+
+  .experience__container {
+    justify-content: space-around;
+  }
+
+  .navbar__list {
+    gap: var(--gap-sm);
+    margin-left: 0;
+    justify-content: center;
+  }
+  .hero__title {
+    font-size: 2.25rem;
+  }
+  .hero__btn {
+    min-width: 100%;
+  }
+  .section {
+    padding-top: 72px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (orientation: portrait) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .hero__title {
+    font-size: 2.25rem;
+    margin-bottom: 32px;
+  }
+
+  .hero__description {
+    margin-bottom: 40px;
+  }
 }
