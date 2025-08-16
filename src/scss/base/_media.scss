@@ -1,0 +1,72 @@
+@use '../abstracts' as *;
+
+// _media.scss
+
+@media (768px < width <= 1280px) {
+  html {
+    font-size: 15px;
+  }
+
+  .header {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+
+  .experience__container {
+    justify-content: space-around;
+  }
+}
+
+@media (480px < width <= 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .header {
+    padding-top: 36px;
+    padding-bottom: 72px;
+  }
+
+  .experience__container {
+    justify-content: space-around;
+  }
+
+  .navbar {
+    &__list {
+      gap: $gap-sm;
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 2.25rem;
+    }
+    &__btn {
+      min-width: 100%;
+    }
+  }
+
+  .section {
+    padding-top: 72px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (orientation: portrait) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .hero {
+    &__title {
+      font-size: 2.25rem;
+      margin-bottom: 32px;
+    }
+    &__description {
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html {
+  font-size: $font-size;
+  font-family: $font-primary;
+  font-weight: $font-weight-normal;
+  line-height: $line-height;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-sm;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-sm;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}

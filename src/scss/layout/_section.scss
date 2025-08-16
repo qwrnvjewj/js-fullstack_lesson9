@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.section {
+  padding-top: 110px;
+  padding-bottom: 90px;
+  text-align: center;
+
+  &__title {
+    font-weight: $font-weight-medium;
+    line-height: $line-height-sm;
+    margin-bottom: 40px;
+  }
+}
+
+.about {
+  background-color: $color-white;
+
+  &__description {
+    color: $color-secondary;
+  }
+}
+
+.process {
+  background-color: $color-light;
+}

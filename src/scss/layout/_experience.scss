@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.experience {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 100px 0;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-lg;
+    justify-content: space-between;
+  }
+  h2 {
+    @include visually-hidden;
+  }
+}
+
+.experience-item {
+  display: flex;
+  gap: $gap;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    justify-content: space-between;
+  }
+
+  &__value {
+    font-size: 1.3125rem;
+    font-weight: $font-weight-medium;
+  }
+
+  &__picture {
+    order: -1;
+  }
+
+  &__image {
+    display: block;
+  }
+}

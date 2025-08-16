@@ -86,17 +86,11 @@ a {
 .navbar {
   margin-bottom: 144px;
 }
-.navbar__btn {
-}
-.navbar__btn-row {
-}
 .navbar__list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap-sm) var(--gap-md);
   margin-left: calc(var(--gap-sm) * -1);
-}
-.navbar__item {
 }
 .navbar__link {
   position: relative;
@@ -173,8 +167,6 @@ a {
 }
 .about__description {
   color: var(--color-secondary);
-}
-.section__description {
 }
 .process {
   background-color: var(--color-light);

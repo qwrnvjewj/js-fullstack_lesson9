@@ -1,0 +1,26 @@
+@use 'sass:math';
+
+// 🎨 Цвета
+$color-black: #000;
+$color-primary: #34547a;
+$color-secondary: #727272;
+$color-light: #eeeff1;
+$color-white: #fff;
+
+// 🖋 Шрифты и текст
+$font-primary: "Roboto", sans-serif;
+$font-size: 16px;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+
+$letter-spacing-md: 0.1em;
+$line-height-sm: 1.2;
+$line-height: 1.64;
+
+// 📏 Размеры и отступы
+$container-primary: 1110px;
+$container-sm: 540px;
+$gap: 20px; // 20px
+$gap-sm: math.div($gap, 2);
+$gap-md: $gap * 1.5;
+$gap-lg: $gap * 2;

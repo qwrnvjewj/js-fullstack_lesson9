@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.hero {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__title {
+    margin: 0 0 44px;
+  }
+
+  &__description {
+    margin-bottom: 56px;
+    color: $color-secondary;
+  }
+
+  &__btn {
+    @include flex-center;
+    padding: 0.5em;
+    background-color: $color-primary;
+    color: $color-white;
+    min-width: 225px;
+    min-height: 65px;
+    letter-spacing: $letter-spacing-md;
+    text-transform: uppercase;
+  }
+}
